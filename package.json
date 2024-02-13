@@ -1,6 +1,11 @@
 {
   "name": "slackbot",
   "private": true,
+  "type": "module",
+  "scripts": {
+    "localdev": "vercel dev --listen 3000 --yes --debug",
+    "localtunnel": "npx localtunnel --port 3000"
+  },
   "dependencies": {
     "@slack/web-api": "7.0.1",
     "openai": "4.26.0"

@@ -1,5 +1,5 @@
 import crypto from 'crypto'
-import { sendGPTResponse } from './_chat'
+import { sendGPTResponse } from './_chat.js'
 
 export const config = {
   maxDuration: 30,

@@ -20,7 +20,7 @@ export async function generatePromptFromThread({
   const result = messages
     .map((message: any) => {
       const isBot = !!message.bot_id && !message.client_msg_id
-      const isNotMentioned = !isBot && !message.text.startsWith(`<@`)
+      const isNotMentioned = !isBot && !message.text?.startsWith(`<@`)
       if (isNotMentioned) return null
 
       return {
